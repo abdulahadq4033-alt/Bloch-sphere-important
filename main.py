@@ -30,7 +30,7 @@ plt.close()
 
 # -------------------- QR Code (OPENS PNG) --------------------
 
-image_url = "https://github.com/abdulahadq4033-alt/Bloch-Sphere/bloch_sphere.png"
+image_url = "https://github.com/abdulahadq4033-alt/Bloch-sphere-important/blob/main/bloch_sphere.png"
 
 qr = qrcode.make(image_url)
 qr.save("bloch_sphere_qr.png")
