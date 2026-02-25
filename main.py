@@ -30,7 +30,7 @@ plt.close()
 
 # -------------------- QR Code (OPENS PNG) --------------------
 
-image_url = "http://127.0.0.1:5500/bloch_sphere_interactive.html"
+image_url = "https://bloch-sphere6778910.netlify.app"
 
 qr = qrcode.make(image_url)
 qr.save("bloch_sphere_qr.png")
