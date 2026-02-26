@@ -9,9 +9,54 @@ It also generates a **QR code** that opens the Bloch Sphere image (`.png`) direc
 
 The Bloch Sphere is a unit sphere used to represent the state of a qubit:
 
-\[
-|\psi\rangle = \cos\left(\frac{\theta}{2}\right)|0\rangle + e^{i\phi}\sin\left(\frac{\theta}{2}\right)|1\rangle
-\]
+## Quantum State Representation (Bloch Sphere)
+
+A general single-qubit quantum state can be written as:
+
+|\psi⟩ = cos(θ/2)|0⟩ + e^{iφ} sin(θ/2)|1⟩
+
+### Meaning of each term
+
+- |\psi⟩  
+  The quantum state of a single qubit.
+
+- |0⟩, |1⟩  
+  The computational basis states.
+
+- θ ∈ [0, π] (polar angle)  
+  Controls the probability of measuring |0⟩ or |1⟩.
+
+- φ ∈ [0, 2π) (azimuthal angle)  
+  Controls the relative phase between the basis states.
+
+- e^{iφ}  
+  A complex phase factor, where i = √(-1).
+
+### Measurement probabilities
+
+P(|0⟩) = cos²(θ/2)  
+P(|1⟩) = sin²(θ/2)
+
+P(|0⟩) + P(|1⟩) = 1
+
+### Bloch Sphere Interpretation
+
+The angles θ and φ correspond to a point on the Bloch sphere with coordinates:
+
+x = sinθ cosφ  
+y = sinθ sinφ  
+z = cosθ
+
+Each point on the sphere represents a unique pure qubit state (up to a global phase).
+
+### Special cases
+
+| State | θ | φ |
+|------|---|---|
+| |0⟩ | 0 | any |
+| |1⟩ | π | any |
+| |+⟩ = (|0⟩ + |1⟩)/√2 | π/2 | 0 |
+| |-⟩ = (|0⟩ − |1⟩)/√2 | π/2 | π |
 
 - **Z-axis** → basis states |0⟩ and |1⟩  
 - **X and Y axes** → superposition and phase  
