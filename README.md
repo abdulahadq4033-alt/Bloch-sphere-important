@@ -81,6 +81,9 @@ Each point on the sphere represents a unique pure qubit state (up to a global ph
 - NumPy  
 - Matplotlib  
 - qrcode (PIL)
+- HTML
+- CSS
+- JavaScript
 
 ---
 
